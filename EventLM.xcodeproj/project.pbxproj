@@ -86,6 +86,8 @@
 		43B5B51729A9096B007EA1D8 /* EventLMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43C2102A29C48AA0001D9C09 /* SportScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportScrollView.swift; sourceTree = "<group>"; };
 		43DC2FF929C5981700DC7325 /* ManageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageData.swift; sourceTree = "<group>"; };
+		43E05F2629D45F570067FEF0 /* ResultsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsDetailView.swift; sourceTree = "<group>"; };
+		43E05F2829D460520067FEF0 /* EventLM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EventLM.entitlements; sourceTree = "<group>"; };
 		F363C8758D9E9DBBD40F89B8 /* Pods-EventLM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventLM.release.xcconfig"; path = "Target Support Files/Pods-EventLM/Pods-EventLM.release.xcconfig"; sourceTree = "<group>"; };
 		F669F33CB501E076495BA897 /* Pods_EventLM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventLM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4336C23C29AE35F3005AD824 /* ResultsView.swift */,
+				43E05F2629D45F570067FEF0 /* ResultsDetailView.swift */,
 				43AFDB7F29B8DD890060D967 /* ResultBox.swift */,
 			);
 			path = Results;
@@ -230,7 +233,11 @@
 		43B5B4F929A90969007EA1D8 /* EventLM */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				09FBA3B129D4695B00CF6A63 /* EventLM.entitlements */,
+=======
+				43E05F2829D460520067FEF0 /* EventLM.entitlements */,
+>>>>>>> Stashed changes
 				43B5B4FA29A90969007EA1D8 /* EventLMApp.swift */,
 				433D225029AF965600A32DF8 /* Authentication */,
 				4336C23429AE341E005AD824 /* Views */,
@@ -467,6 +474,7 @@
 				43DC2FFA29C5981700DC7325 /* ManageData.swift in Sources */,
 				4336C23729AE34C2005AD824 /* Constants.swift in Sources */,
 				43C2102B29C48AA0001D9C09 /* SportScrollView.swift in Sources */,
+				43E05F2729D45F570067FEF0 /* ResultsDetailView.swift in Sources */,
 				4333AA1C29C20CF30060BB5B /* Path.swift in Sources */,
 				4336C23B29AE35E6005AD824 /* EventView.swift in Sources */,
 				4387BE8F29CC7189004EC86A /* User.swift in Sources */,
@@ -630,7 +638,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EventLM/Preview Content\"";
+<<<<<<< Updated upstream
 				DEVELOPMENT_TEAM = U7D887R932;
+=======
+				DEVELOPMENT_TEAM = WB85QVFKQZ;
+>>>>>>> Stashed changes
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -643,7 +655,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = OBE.EventLM;
+				PRODUCT_BUNDLE_IDENTIFIER = OBES.EventLM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -661,7 +673,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"EventLM/Preview Content\"";
+<<<<<<< Updated upstream
 				DEVELOPMENT_TEAM = U7D887R932;
+=======
+				DEVELOPMENT_TEAM = WB85QVFKQZ;
+>>>>>>> Stashed changes
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -674,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = OBE.EventLM;
+				PRODUCT_BUNDLE_IDENTIFIER = OBES.EventLM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
