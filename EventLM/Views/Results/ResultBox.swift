@@ -10,7 +10,9 @@ import SwiftUI
 struct ResultBox: View {
     @State var eventData: [String : String]
     @EnvironmentObject var path : Path
-
+    // List of all school logos stored locally within the app
+    // We also have to be really careful as the syntax is very sensitive
+    @State var logos : [String] = ["Haverford", "Penncrest", "Ridley", "Strath Haven", "Garnet Valley", "Conestoga", "Radnor", ]
     var body: some View {
 
         ZStack {
@@ -31,21 +33,29 @@ struct ResultBox: View {
                     Image("LMLogo")
                         .resizable()
                         .frame(width: (UIScreen.main.bounds.width/10), height: (UIScreen.main.bounds.width/10))
-                    Text("Team")
+                    Text("Lower Merion")
                         .foregroundColor(.black)
-                        .font(Constants.GameScoreFont)
+                        .font(Constants.gameNameFont)
                     Text(eventData["scorelm"] ?? "?")
                         .foregroundColor(.black)
                         .font(Constants.GameScoreFont)
                 }
                 HStack {
-                    Image("badLogo")
-                        .resizable()
-                        .opacity(0.8)
-                        .frame(width: (UIScreen.main.bounds.width/10), height: (UIScreen.main.bounds.width/10))
-                    Text("Team")
+                    if logos.contains(eventData["name"] ?? "?" ){
+                        Image(eventData["name"] ?? "badLogo")
+                            .resizable()
+                            .opacity(0.8)
+                            .frame(width: (UIScreen.main.bounds.width/10), height: (UIScreen.main.bounds.width/10))
+                    }
+                    else{
+                        Image("Unknown")
+                            .resizable()
+                            .opacity(0.8)
+                            .frame(width: (UIScreen.main.bounds.width/10), height: (UIScreen.main.bounds.width/10))
+                    }
+                    Text(eventData["name"] ?? "?")
                         .foregroundColor(.black.opacity(0.7))
-                        .font(Constants.GameScoreFont)
+                        .font(Constants.gameNameFont)
                     Text(eventData["scoreOpponent"] ?? "?")
                         .foregroundColor(.black.opacity(0.7))
                         .font(Constants.GameScoreFont)

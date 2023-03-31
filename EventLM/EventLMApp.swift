@@ -25,7 +25,7 @@ struct EventLM: App {
 
     var body: some Scene {
         WindowGroup {
-      SplashScreenView()
+            SplashScreenView()
                 .environmentObject(path)
                 .environmentObject(isData)
 

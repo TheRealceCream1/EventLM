@@ -18,6 +18,7 @@ struct ResultsView: View {
     
     
     var body: some View {
+        NavigationView{
         VStack{
             if events.count != 0{
                 ScrollView{
@@ -29,9 +30,11 @@ struct ResultsView: View {
                     ],spacing:1, content: {
                         ForEach(events, id: \.id) { i in
                             if let event = i.value as? [String: String]{
-                                
-                                ResultBox(eventData : event)
-                                
+                                NavigationLink{
+                                    ResultsDetailView(eventData: event)
+                                }label:{
+                                    ResultBox(eventData : event)
+                                }
                             }
                             
                         }
@@ -67,8 +70,8 @@ struct ResultsView: View {
                     events = sortedEvents
                 }
             }
+        }.navigationTitle("Results")
         }
-        
     }
 }
 

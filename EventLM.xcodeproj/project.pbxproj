@@ -33,6 +33,7 @@
 		43B5B51829A9096B007EA1D8 /* EventLMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B5B51729A9096B007EA1D8 /* EventLMUITestsLaunchTests.swift */; };
 		43C2102B29C48AA0001D9C09 /* SportScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C2102A29C48AA0001D9C09 /* SportScrollView.swift */; };
 		43DC2FFA29C5981700DC7325 /* ManageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DC2FF929C5981700DC7325 /* ManageData.swift */; };
+		43E05F2729D45F570067FEF0 /* ResultsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E05F2629D45F570067FEF0 /* ResultsDetailView.swift */; };
 		8A50FEFD04C291A6DF85F154 /* Pods_EventLM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F669F33CB501E076495BA897 /* Pods_EventLM.framework */; };
 /* End PBXBuildFile section */
 
